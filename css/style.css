@@ -252,9 +252,11 @@ header.sticky{
 
 .contact{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	align-items: center;
-	gap: 3rem;
+	text-align: center;
+	gap: 2rem;
+	margin-top: 5rem;
 }
 .contact-text h4{
 	margin: 15px 0;
@@ -272,10 +274,11 @@ header.sticky{
 	margin-bottom: 2rem;
 }
 .contact-list{
-	margin-bottom: 3rem;
+	
 }
 .contact-list li{
-	margin-bottom: 10px;
+	
+	margin-bottom: 1px;
 	display: block;
 }
 .contact-list li a{
@@ -474,18 +477,17 @@ transition-delay: 0s;
 .card .circle .logo
 {
     position: relative;
-    width: 300px;
+    width: 500px;
+
     transition: 0.5s;
     transition-delay: 0.5s;
-
 	
-
 }
 .card:hover .circle .logo
 {
     transform: scale(0);
     transition-delay: 0s;
-	
+
 }
 .content
 {
@@ -575,4 +577,56 @@ transition-delay: 0s;
 
 
     }
+}
+footer{
+	position: relative;
+	width: 100%;
+	background: #03041a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+	padding-top: 10px;
+}
+.social contact-list{
+	padding: 20;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #ffc400;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#ffc400;
+	bottom: 35px;
+	font-size: 14px; 
 }
